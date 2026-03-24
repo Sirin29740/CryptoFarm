@@ -32,7 +32,6 @@ contract CryptoFarm {
         uint256 lastWaterday = playerPlots[msg.sender][plotI].lastwatertime/86400;
         require(currentday > lastWaterday, "You have already watered today");
         plot.status = PlotStatus.Unwatered;
-        plot.lastwatertime = block.timestamp;
         plot.wateredays += 1;
     }
     function setready(uint256 plotI) external{
