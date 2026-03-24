@@ -86,8 +86,3 @@ const plantSeed = async (index) => {
     </div>
   </div>
 </template>
-
-<style scoped>
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.plot-card { border: 2px solid #4caf50; padding: 15px; border-radius: 10px; background: #e8f5e9; }
-</style>
